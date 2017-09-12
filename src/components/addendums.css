@@ -1,0 +1,22 @@
+.belief {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 50px;
+}
+
+span {
+  font-style: italic;
+  display: block;
+  transform: skewX(-20deg);
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .belief {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 38%;
+  }
+}

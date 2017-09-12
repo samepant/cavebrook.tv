@@ -1,0 +1,61 @@
+.soon {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 100;
+  width: 25%;
+  overflow: hidden;
+}
+
+.circleText {
+  width: 50%;
+  min-width: 300px;
+  animation: orbit 15s infinite linear;
+  display: block;
+  margin: 0 auto;
+}
+
+.circleText text {
+  font-size: 14px;
+  font-family: Times New Roman;
+  font-weight: bold;
+  fill: white;
+  stroke: black;
+  stroke-width: 0.3px;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#glow {
+  animation: glow 2s infinite ease;
+  z-index: 2;
+  position:absolute;
+  height: 200px;
+  width: 80vw;
+  max-width: 600px;
+  background:radial-gradient(at top, rgba(255,106,0,0.5) 1%, rgba(255,0,0,0) 70%);
+  top: 50%;
+  left: 50%;
+  transform:translateX(-50%);
+}
+
+@keyframes glow{
+  from {opacity: 1}
+  50% {opacity: 0.7}
+  to {opacity: 1}
+}
+
+@media (max-width: 750px) {
+  .soon {
+    width: 100%;
+    
+  }
+}
