@@ -9,7 +9,6 @@
 .circleText {
   width: 50%;
   min-width: 300px;
-  animation: orbit 15s infinite linear;
   display: block;
   margin: 0 auto;
 }
