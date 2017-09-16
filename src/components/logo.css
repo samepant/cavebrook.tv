@@ -3,4 +3,5 @@
   text-align: center;
   color: darkorchid;
   transform: skewY(-2deg);
+  filter: url('#displacementFilter2');
 }

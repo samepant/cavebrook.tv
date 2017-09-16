@@ -30,7 +30,7 @@ export default class extends React.Component {
             
           </filter>
         </svg>
-        <h2 className='logo' id='logo' style={{filter: 'url(#displacementFilter2)'}}>CAVEBROOK.TV</h2>
+        <h2 className='logo' id='logo'>CAVEBROOK.TV</h2>
       </div>
     )
   }
