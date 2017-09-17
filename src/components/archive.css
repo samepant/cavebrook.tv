@@ -1,13 +1,12 @@
-.belief {
+.archive {
   width: 100%;
   margin: 200px 0 0 0;
 }
 
-span {
+.archiveLink {
   font-style: italic;
   display: block;
   transform: skewX(-20deg);
   font-size: 20px;
   text-align: center;
 }
-

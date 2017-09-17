@@ -1,10 +1,8 @@
 import React from 'react'
 import './App.css'
-import Logo from './components/logo'
-import Campfire from './components/campfire'
 import Addendums from './components/addendums'
-import Soon from './components/soon.js'
 import Livestream from './components/livestream'
+import Archive from './components/archive'
 
 class App extends React.Component {
   render () {
@@ -12,7 +10,7 @@ class App extends React.Component {
       <div>
         <Livestream />
         <Addendums />
-        <Soon />
+        <Archive />
       </div>
     );
   }
