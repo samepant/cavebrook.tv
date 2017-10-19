@@ -17,7 +17,7 @@
             font-size: 5vh;
           }
 
-          p:last-child:after {
+          p:after {
             content: '|';
             color: purple;
             animation: cursor 0.75s infinite step-end;
@@ -37,8 +37,15 @@
         </style>
     </head>
     <body>
-      <p>Chain. Restraint. Links.</p>
+      <p id='doc'></p>
+      <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+      <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 
-      <p>Chains are flexible when not being used, but are extremely rigid under load. They are dynamic until they are taught. Links hold together and change from pivot points to rigid bodies united in purpose. I can move a chain freely until I can’t. It moves richly up until its limit. Framed by limits. The radii of possibility. A system limited and created by by the tension of its endpoints</p>
+      <script>
+        var socket = io('http://localhost:2000');
+        socket.on('writing', function(txt){
+          $('#doc').text(txt);
+        });
+      </script>
     </body>
 </html>
