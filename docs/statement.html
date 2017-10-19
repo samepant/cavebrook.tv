@@ -45,6 +45,7 @@
       <script>
         var socket = io('https://desolate-earth-57243.herokuapp.com/');
         socket.on('writing', function(txt){
+          console.log(txt)
           $('#doc').text(txt);
         });
       </script>
