@@ -43,7 +43,7 @@
       <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 
       <script>
-        var socket = io('https://desolate-earth-57243.herokuapp.com/');
+        var socket = io('http://localhost:2000');
         socket.on('writing', function(txt){
           console.log(txt)
           $('#doc').text(txt);

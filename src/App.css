@@ -1,1 +1,9 @@
+.sidebyside {
+  display: flex;
+}
 
+@media (max-width: 700px) {
+  .sidebyside{
+    display: block;
+  }
+}

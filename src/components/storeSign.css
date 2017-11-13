@@ -1,0 +1,61 @@
+.storeImage {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  width: 100%;
+  max-width: 380px;
+}
+
+.storeStatus {
+  padding-top: 40px;
+  width: 30%;
+  position: relative;
+  min-height: 350px;
+}
+
+.logo {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  max-width: 250px;
+  transform: rotateZ(15deg);
+  z-index: 100;
+}
+
+.open {
+  animation: dance 1.5s infinite linear;
+}
+
+.textStatus {
+  position: absolute;
+  z-index: 101;
+  top: 5%;
+  left: 2%;
+  font-size: 35px;
+  transform: rotateZ(-10deg);
+}
+
+@media (max-width: 1000px) {
+  .storeStatus {
+    width: 100%;
+  }
+  .logo {
+    top: 70%;
+  }
+}
+
+@keyframes dance {
+  0% {
+    transform: rotateZ(15deg);
+  }
+  50% {
+    transform: rotateZ(15deg);
+  }
+  51% {
+    transform: rotateZ(-15deg);
+  }
+  100% {
+    transform: rotateZ(-15deg);
+  }
+}
